@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>CRUD</title>
+  </head>
+
+  <body>
+
+
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="imagens/logo.png" alt="">
+            </a>
+        </div>
+
+        <!-- <nav class="cabecalho">
+            <ul>
+                <li><a href="#" onclick="mostraCadastro()">Cadastrar</a></li>
+                <li><a href="#" onclick="mostraAtualizar()">Alunos</a></li>
+            </ul>
+        </nav> -->
+    </header>
+
+
+<section class="cad">
+
+    <div class="container">
+      <div class="img-form">
+        <img src="imagens/img.png" alt="#" />
+      </div>
+      <div class="cadastro" id="cadastro">
+        <form action="#" class="form-cadastro" id="infos-cadastro">
+          <div class="cabecalho-form">
+            <h1>Cadastrar Aluno</h1>
+          </div>
+          <div class="grupo-inputs">
+            <div class="informacoes">
+              <label for="nome">Nome</label>
+              <input
+                id="c-nome"
+                class="inputs-cadastro"
+                type="text"
+                name="nome"
+                data-index = "new"
+                placeholder="Nome completo "
+                required
+              />
+            </div>
+            <div class="informacoes">
+              <label for="nascimento">Data de Nascimento</label>
+              <input
+                id="c-nascimento"
+                class="inputs-cadastro"
+                type="text"
+                name="nascimento"
+                placeholder="xx / xx / xxxx"
+                required
+              />
+            </div>
+            <div class="informacoes">
+              <label for="cpf">CPF</label>
+              <input
+                id="c-cpf"
+                class="inputs-cadastro"
+                type="text"
+                name="cpf"
+                placeholder="000.000.000-00"
+                required
+              />
+            </div>
+            <div class="informacoes">
+              <label for="mae">Nome da Mãe</label>
+              <input
+                id="c-mae"
+                class="inputs-cadastro"
+                type="text"
+                name="mae"
+                placeholder="Nome completo"
+                required
+              />
+            </div>
+            <div class="informacoes">
+              <label for="matricula">Matrícula</label>
+              <input
+                id="c-matricula"
+                class="inputs-cadastro"
+                type="text"
+                name="matricula"
+                placeholder="xxxxxxxxxx"
+                required
+              />
+            </div>
+            <div class="informacoes">
+              <label for="telefone">Telefone</label>
+              <input
+                id="c-telefone"
+                class="inputs-cadastro"
+                type="text"
+                name="telefone"
+                placeholder="(xx) x xxxx-xxxx"
+                required
+              />
+            </div>
+          </div>
+          <div class="genero">
+            <div class="genero-titulo">
+              <h5>Gênero</h5>
+            </div>
+            <div class="grupo-genero">
+              <div class="genero-input">
+                <input
+                  type="radio"
+                  class="inputs-cadastro"
+                  name="genero"
+                  value="F"
+                  id="c-genero"
+                />
+                <label for="feminino">Feminino</label>
+              </div>
+              <div class="grupo-genero">
+                <div class="genero-input">
+                  <input
+                    type="radio"
+                    class="inputs-cadastro"
+                    name="genero"
+                    value="M"
+                    id="c-genero"
+                  />
+                  <label for="masculino">Masculino</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-cadastrar">
+            <button type="button" id="btnCadastrar">Salvar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+</section><!--cadastro de alunos-->
+
+
+<section class="lista-alunos">
+
+  <div class="container-alunos">
+
+    <div class="titulo">
+      <h1>Alunos cadastrados</h1>
+    </div><!--titulo-->
+
+    <div class="table-alunos">
+
+      <table id="table-alunos">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Nascimento</th>
+            <th>Mãe</th>
+            <th>Gênero</th>
+            <th>Matrícula</th>
+            <th>Telefone</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        </tbody>
+      </table><!--tabela com os alunos cadastros para alteracao em exclusão-->
+  </div><!--Título da table alunos-->
+
+
+  </div><!--container de alunos-->
+</section><!--lista de alunos-->
+
+<script src="script4.js"></script>
+  </body>
+</html>
